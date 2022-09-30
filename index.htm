@@ -1,0 +1,45 @@
+!<!DOCTYPE html>
+<html>
+<head>
+	<title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="cont">
+		<form onsubmit="return Validate()" name="myForm">
+			<fieldset>
+				<legend>Data Validation</legend>
+				<table cellpadding="5px;">
+					<tr>
+						<td>Name</td>
+						<td><input type="text" name="Name"></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input type="text" name="EMail"></td>
+					</tr>
+					<tr>
+						<td>Number</td>
+						<td><input type="text" name="number"></td>
+					</tr>
+					<tr>
+						<td>Zip Code</td>
+						<td><input type="text" name="Zip"></td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td><select name="Country">
+							<option value="-1" selected="true">[choose your country]</option>
+							<option value="1">USA</option>
+							<option value="2">India</option>
+							<option value="3">Bangladesh</option>
+						</select></td>
+					</tr>
+					<tr><td colspan="2" align="center"><input type="submit"></td></tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+</body>
+<script src="app.js"></script>
+</html>
